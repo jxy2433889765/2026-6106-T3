@@ -14,5 +14,9 @@ def main():
 def transfermoney():
     return(render_template("transfermoney.html"))
 
+@app.route("/deposit",methods=["GET","POST"])
+def deposit():
+    return(render_template("deposit.html"))
+
 if __name__ == "__main__":
     app.run(port=5001)
